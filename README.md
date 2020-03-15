@@ -84,7 +84,7 @@ As mentioned in the paper, balance ratio (BR) is used to balance the Volan2018 d
 Particularly in Volan2018, the minimum BR is obtained by looping through all the possible cutting thresholds using balance.py, followed by training YOLO model on selected (i.e., balanced) data. In total, 8 models are trained based on different combination and the results are in the following table. The figure below shows the detail performance of Model2 (best on unseen data) on test data from balanced and unbalanced drone, balanced and unbalanced helicopter, Volan007, and 008. 
 <img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/Capture.PNG"   align="middle"/>
 
-<img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/results.jpg"   align="middle"/>
+<img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/results.jpg" width=800  align="middle"/>
 
 ## **Pre-trained Models**
 
