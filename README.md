@@ -1,5 +1,6 @@
-<img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/ezgif-3-75d32102d9c6.gif" align="middle"/>
-
+<p align="center">
+<img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/ezgif-3-75d32102d9c6.gif">
+</p>
 # Volan2018: object detection in aerial imagery for disaster response and recovery
 
 
@@ -76,18 +77,19 @@ Here, the first number (e.g., “0”) indicates the frame number and the second
 
 ### Balance Ratio (BR)
 As mentioned in the paper, balance ratio (BR) is used to balance the Volan2018 dataset that results in better performance on the unseen data (Volan007 and 008). The calculation of BR is expressed in the Equation below and BR.py computes the BR value of any given annotation file. In this Equation, i<sub>nk</sub> indicates the number of instances of class *𝑛* in the frame *𝑘*. The total number of classes is *𝑐*, and the total amount of frames is *𝑓*. Moreover,  ![alt text](https://github.com/piyalong/volan-yolo/blob/master/Examples/nhat.PNG) denotes the average number of instances for class *c* in *f* frames. By definition, the higher BR implies a less-balanced dataset. The most balanced dataset should have a BR value of 0.
-
-<img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/BR.png"  width=400 align="middle"/>
-
+<p align="center">
+<img width=400 src="https://github.com/piyalong/volan-yolo/blob/master/Examples/BR.png"  >
+</p>
 
 ### Model training and testing
 
 Particularly in Volan2018, the minimum BR is obtained by looping through all the possible cutting thresholds using balance.py, followed by training YOLO model on selected (i.e., balanced) data. In total, 8 models are trained based on different combination and the results are in the following table. The figure below shows the detail performance of Model2 (best on unseen data) on test data from balanced and unbalanced drone, balanced and unbalanced helicopter, Volan007, and 008. 
+
 <img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/Capture.PNG"   align="middle"/>
 
-
-<img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/results.jpg" width=800  align="middle"/>
-
+<p align="center">
+<img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/results.jpg" width=800  >
+</p>
 ## **Pre-trained Models**
 
 Models trained on Volan2018 dataset are available on the following links:
