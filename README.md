@@ -2,7 +2,7 @@
 <img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/ezgif-3-75d32102d9c6.gif">
 </p>
 
-# Volan2018: object detection in aerial imagery for disaster response and recovery
+# Volan v.2018: object detection in aerial imagery for disaster response and recovery
 
 
 
@@ -16,7 +16,7 @@
 
 ## **Introduction**
 
-Project Volan2018 aims at extracting accurate and prompt information on the disaster-affected objects from aerial visual data during disasters. Particularly, a CNN model, YOLO, is used to detect classes including car, undamaged roof, damaged roof, vegetation, debris, and flooded area. A detailed description of the methodology and dataset are described in the following article.
+Project Volan v.2018 aims at extracting accurate and prompt information on the disaster-affected objects from aerial visual data during disasters. Particularly, a CNN model, YOLO, is used to detect classes including car, undamaged roof, damaged roof, vegetation, debris, and flooded area. A detailed description of the methodology and dataset are described in the following article.
 
 ## Article
 
@@ -54,7 +54,7 @@ Please cite the article if you use the dataset, model or method(s), or find the 
 
 ### Dataset statisctics
 
-Volan2018 dataset contains 65,580 images extracted from web-mined videos. All the videos, with the same name as appeared in the paper, can be found in the following links. The video annotation files  are named as "VOLAN_XXX_gt.txt" with each line corresponding to every consecutive frame in the video named VOLAN_XXX.
+Volan v.2018 dataset contains 65,580 images extracted from web-mined videos. All the videos, with the same name as appeared in the paper, can be found in the following links. The video annotation files are named as "VOLAN_XXX_gt.txt" with each line corresponding to every consecutive frame in the video named VOLAN_XXX.
 
 [Volan001](https://www.youtube.com/watch?v=vkUlJ8jlbx8)
 [Volan002](https://www.youtube.com/watch?v=XRdUV4WqnDE&t=2s)
@@ -77,14 +77,14 @@ Here, the first number (e.g., “0”) indicates the frame number and the second
 ## **BR calculation and data balancing**
 
 ### Balance Ratio (BR)
-As mentioned in the paper, balance ratio (BR) is used to balance the Volan2018 dataset that results in better performance on the unseen data (Volan007 and 008). The calculation of BR is expressed in the Equation below and BR.py computes the BR value of any given annotation file. In this Equation, i<sub>nk</sub> indicates the number of instances of class *𝑛* in the frame *𝑘*. The total number of classes is *𝑐*, and the total amount of frames is *𝑓*. Moreover,  ![alt text](https://github.com/piyalong/volan-yolo/blob/master/Examples/nhat.PNG) denotes the average number of instances for class *c* in *f* frames. By definition, the higher BR implies a less-balanced dataset. The most balanced dataset should have a BR value of 0.
+As mentioned in the paper, balance ratio (BR) is used to balance the Volan v.2018 dataset that results in better performance on the unseen data (Volan007 and 008). The calculation of BR is expressed in the Equation below and BR.py computes the BR value of any given annotation file. In this Equation, i<sub>nk</sub> indicates the number of instances of class *𝑛* in the frame *𝑘*. The total number of classes is *𝑐*, and the total amount of frames is *𝑓*. Moreover,  ![alt text](https://github.com/piyalong/volan-yolo/blob/master/Examples/nhat.PNG) denotes the average number of instances for class *c* in *f* frames. By definition, the higher BR implies a less-balanced dataset. The most balanced dataset should have a BR value of 0.
 <p align="center">
 <img width=400 src="https://github.com/piyalong/volan-yolo/blob/master/Examples/BR.png"  >
 </p>
 
 ### Model training and testing
 
-Particularly in Volan2018, the minimum BR is obtained by looping through all the possible cutting thresholds using balance.py, followed by training YOLO model on selected (i.e., balanced) data. In total, 8 models are trained based on different combination and the results are in the following table. The figure below shows the detail performance of Model2 (best on unseen data) on test data from balanced and unbalanced drone, balanced and unbalanced helicopter, Volan007, and 008. 
+Particularly in Volan v.2018, the minimum BR is obtained by looping through all the possible cutting thresholds using balance.py, followed by training YOLO model on selected (i.e., balanced) data. In total, 8 models are trained based on different combination and the results are in the following table. The figure below shows the detail performance of Model2 (best on unseen data) on test data from balanced and unbalanced drone, balanced and unbalanced helicopter, Volan007, and 008. 
 
 <img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/Capture.PNG"   align="middle"/>
 
@@ -94,7 +94,7 @@ Particularly in Volan2018, the minimum BR is obtained by looping through all the
 
 ## **Pre-trained Models**
 
-Models trained on Volan2018 dataset are available on the following links:
+Models trained on Volan v.2018 dataset are available on the following links:
 
 - Model1
 - Model2
