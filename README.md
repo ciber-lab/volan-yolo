@@ -3,7 +3,7 @@
 <img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/ezgif-3-75d32102d9c6.gif">
 </p>
 
-# Volan v.2018: object detection in aerial imagery for disaster response and recov
+# Volan v.2018: object detection in aerial imagery for disaster response and recovery
 
 
 
