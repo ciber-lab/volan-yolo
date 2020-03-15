@@ -1,4 +1,4 @@
-<img src="https://github.com/piyalong/Volan2018_draft/blob/master/examples/ezgif-3-75d32102d9c6.gif" align="middle"/>
+<img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/ezgif-3-75d32102d9c6.gif" align="middle"/>
 
 # Volan2018: object detection in aerial imagery for disaster response and recovery
 
@@ -69,22 +69,23 @@ Volan2018 dataset contains 65,580 images extracted from web-mined videos. All th
 *0,15,104,350,472,552,Undamaged_Roof0,610,316,906,536,Undamaged_Roof1,201,127,265,201,Car0,3,225,158,293,Car1,405,182,539,248,Debris0,348,272,422,317,Car2,447,292,665,398,Damaged_Roof0,762,167,892,244,Damaged_Roof1,560,24,661,54,Undamaged_Roof2,253,50,311,93,Car3,722,88,789,136,Car4,1010,66,1046,93,Car5,998,577,1067,691,Car6,881,434,1001,561,Vegetation0,471,422,557,519,Vegetation1*
 
 Here, the first number (e.g., “0”) indicates the frame number and the second number (e.g., “15”) represents the total number of instances in the frame. Before each label, e.g., “Undamaged_Roof0”, there are four numbers indicating the x1 (top-left x), y1 (top-left y), x2 (bottom-right x), and y2 (bottom-right y) coordinates of the bounding box on the image. Loading one frame with its annotation will display the example as below. 
-<img src="https://github.com/piyalong/Volan2018_draft/blob/master/examples/annotation.png"   align="middle"/>
+<img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/annotation.png"   align="middle"/>
 
 
 ## **BR calculation and data balancing**
 
 ### Balance Ratio (BR)
-As mentioned in the paper, balance ratio (BR) is used to balance the Volan2018 dataset that results in better performance on the unseen data (Volan007 and 008). The calculation of BR is expressed in the Equation below and BR.py computes the BR value of any given annotation file. In this Equation, i<sub>nk</sub> indicates the number of instances of class *𝑛* in the frame *𝑘*. The total number of classes is *𝑐*, and the total amount of frames is *𝑓*. Moreover,  ![alt text](https://github.com/piyalong/Volan2018_draft/blob/master/examples/nhat.PNG) denotes the average number of instances for class *c* in *f* frames. By definition, the higher BR implies a less-balanced dataset. The most balanced dataset should have a BR value of 0.
+As mentioned in the paper, balance ratio (BR) is used to balance the Volan2018 dataset that results in better performance on the unseen data (Volan007 and 008). The calculation of BR is expressed in the Equation below and BR.py computes the BR value of any given annotation file. In this Equation, i<sub>nk</sub> indicates the number of instances of class *𝑛* in the frame *𝑘*. The total number of classes is *𝑐*, and the total amount of frames is *𝑓*. Moreover,  ![alt text](https://github.com/piyalong/volan-yolo/blob/master/Examples/nhat.PNG) denotes the average number of instances for class *c* in *f* frames. By definition, the higher BR implies a less-balanced dataset. The most balanced dataset should have a BR value of 0.
 
-<img src="https://github.com/piyalong/Volan2018_draft/blob/master/examples/BR.png"   align="middle"/>
+<img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/BR.png"   align="middle"/>
 
 ### Model training and testing
 
 Particularly in Volan2018, the minimum BR is obtained by looping through all the possible cutting thresholds using balance.py, followed by training YOLO model on selected (i.e., balanced) data. In total, 8 models are trained based on different combination and the results are in the following table. The figure below shows the detail performance of Model2 (best on unseen data) on test data from balanced and unbalanced drone, balanced and unbalanced helicopter, Volan007, and 008. 
-<img src="https://github.com/piyalong/Volan2018_draft/blob/master/examples/Capture.PNG"   align="middle"/>
+<img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/Capture.PNG"   align="middle"/>
 
 <img src="https://github.com/piyalong/volan-yolo/blob/master/Examples/results.jpg"   align="middle"/>
+
 ## **Pre-trained Models**
 
 Models trained on Volan2018 dataset are available on the following links:
