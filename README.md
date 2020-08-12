@@ -100,7 +100,7 @@ Particularly in Volan v.2018, the minimum BR is obtained by looping through all 
 
 ## **Pre-trained Models**
 
-Models trained on Volan v.2018 dataset are available on the following links: 8 mdoels <a href="https://drive.google.com/drive/folders/1x__pJZLJomjzeGFjlaz_Ga1XqnzZU5l5"> 
+Models trained on Volan v.2018 dataset are available on the following links: [8 mdoels] <a href="https://drive.google.com/drive/folders/1x__pJZLJomjzeGFjlaz_Ga1XqnzZU5l5"> 
 
 ## **Tutorials**
 
