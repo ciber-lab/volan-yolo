@@ -100,7 +100,7 @@ Particularly in Volan v.2018, the minimum BR is obtained by looping through all 
 
 ## **Pre-trained Models**
 
-Models trained on Volan v.2018 dataset are available in the corresponding subfolders of the dataset.
+Models trained on Volan v.2018 dataset can be accessed from the corresponding subfolders in the dataset.
 
 ## **Tutorials**
 
