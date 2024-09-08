@@ -57,7 +57,7 @@ Please cite the article if you use the dataset, model or method(s), or find the 
 ### Dataset statisctics
 
 
-Volan v.2018 dataset contains 65,580 images extracted from web-mined videos. All the videos, with the same name as appeared in the paper, can be found in the following links. The video annotation files are named as "VOLAN_XXX_gt.txt" with each line corresponding to every consecutive frame in the video named VOLAN_XXX.
+Volan v.2018 dataset contains 65,580 images extracted from web-mined videos. The dataset is available on this [OneDrive folder](https://o365coloradoedu-my.sharepoint.com/:f:/g/personal/ambe3060_colorado_edu/EsiLaSYkGdNHoFcBRx9agQUByGehkQTnz8BxAGVirKEmcg?e=h8dr5S). ADditionallt, all videos, with the same name as appeared in the paper, can be found in the following links. The video annotation files are named as "VOLAN_XXX_gt.txt" with each line corresponding to every consecutive frame in the video named VOLAN_XXX.
 
 [Volan001](https://www.youtube.com/watch?v=vkUlJ8jlbx8)
 [Volan002](https://www.youtube.com/watch?v=XRdUV4WqnDE&t=2s)
@@ -100,7 +100,7 @@ Particularly in Volan v.2018, the minimum BR is obtained by looping through all 
 
 ## **Pre-trained Models**
 
-Models trained on Volan v.2018 dataset are available on the following link: [8 models](https://o365coloradoedu-my.sharepoint.com/:f:/g/personal/ambe3060_colorado_edu/EpkI7s57pQxDuMhm94IEVHoBvANugLENfyUcErw4IiFPaw?e=kiXaLZ)
+Models trained on Volan v.2018 dataset are available in the corresponding subfolders of the dataset.
 
 ## **Tutorials**
 
